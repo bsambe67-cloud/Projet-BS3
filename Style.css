@@ -803,6 +803,18 @@ nav ul li a:hover::after{
     font-size:20px;
 }
 
+.whatsapp-contact-button{
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    margin-top:20px;
+    background:#25d366;
+}
+
+.whatsapp-contact-button:hover{
+    background:#128c7e;
+}
+
 .contact-form{
     background:#fff;
     padding:40px;

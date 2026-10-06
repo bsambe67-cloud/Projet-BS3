@@ -18,6 +18,23 @@ if (menuBtn && menu) {
 
 }
 
+const contactButton = document.querySelector(".contact-btn");
+const contactSection = document.getElementById("contact");
+
+if (contactButton && contactSection) {
+
+    contactButton.addEventListener("click", (event) => {
+
+        event.preventDefault();
+        contactSection.scrollIntoView({
+            behavior: "smooth",
+            block: "start"
+        });
+
+    });
+
+}
+
 // ================= FERMER LE MENU MOBILE =================
 
 const liens = document.querySelectorAll("nav a");
@@ -405,25 +422,5 @@ setTimeout(()=>{
     );
 
 },1500);
-
-// ================= VALIDATION FORMULAIRE =================
-
-const formulaire = document.querySelector(".contact-form form");
-
-if(formulaire){
-
-    formulaire.addEventListener("submit",(e)=>{
-
-        e.preventDefault();
-
-        alert(
-            "Merci pour votre message.\n\nNous vous répondrons dans les meilleurs délais."
-        );
-
-        formulaire.reset();
-
-    });
-
-}
 
 // ================= FIN DU SCRIPT =================
